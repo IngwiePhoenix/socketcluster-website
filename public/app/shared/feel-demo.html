@@ -1,4 +1,23 @@
-<tabset class="feel-demo">
-  <tab heading="Socket"></tab>
-  <tab heading="Cluster"></tab>
-</tabset>
+<div class="feel-demo-wrapper">
+  <div ng-repeat="channel in channels" class="row channels-row">
+    <div class="col col-sm-2">{{channel.name}}</div>
+    <div class="col col-sm-6"><input type="text" class="form-control" /></div>
+    <div class="col col-sm-2"><input type="button" class="btn" value="Subscribe" /></div>
+    <div class="col col-sm-2"><input type="button" class="btn" value="Unsubscribe" /></div>
+  </div>
+  <div class="row">
+    <div class="col col-sm-12">
+      <input type="button" class="btn" value="Add channel" />
+    </div>
+  </div>
+  <div class="row row-publish">
+    <div class="col col-sm-5">Channel: <input type="text" class="form-control" /></div>
+    <div class="col col-sm-5">Data: <input type="text" class="form-control" /></div>
+    <div class="col col-sm-2"><input type="button" class="btn btn-publish" value="Publish" /></div>
+  </div>
+  <div class="row row-connect-disconnect">
+    <div class="col col-sm-2"><input type="button" class="btn" value="Connect" /></div>
+    <div class="col col-sm-2"><input type="button" class="btn" value="Disconnect" /></div>
+  </div>
+</div>
+

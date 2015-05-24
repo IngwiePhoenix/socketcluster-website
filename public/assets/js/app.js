@@ -134,7 +134,10 @@ socketclusterApp.directive('feelDemo', function() {
   return {
     templateUrl: 'app/shared/feel-demo.html',
     link: function ($scope) {
-      $scope.customer = {name: 'John Smith', address: '123 South Street, Sydney'};
+      $scope.channels = [
+        {name: 'random_channel'},
+        {name: 'bla'},
+      ];
     }
   };
 });
